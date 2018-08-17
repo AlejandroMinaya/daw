@@ -20,6 +20,7 @@
             <nav>
                 <ul>
                     <li><a href="index.html"> Inicio </a>
+                    <li><a href="extra.html"> URL, MIME y más...</a></li>
                     <li><a href="quest.html"> Cuestionario </a>
                 </ul>
             </nav>
@@ -29,7 +30,9 @@
             <!-- PREGUNTA -->
             <article>
                 <h1>¿Cuál es la diferencia entre Internet y la World Wide Web?</h1>
-                <p></p>
+                <p>La <dfn>Internet</dfn>simplemente se refiere a la red mundial entre computadoras. Dígase las conexiones entre diferentes servidores, clientes, ISPs, etc.
+                Por otro lado, la <dfn>World Wide Web</dfn> describe el subconjunto de interconexiones entre servidores Web. Originalmente la idea de los servidores Web,
+                era simplemente poner información a disposición de las computadoras en la Internet. <a href="#footnote-2">[2]</a></p>
             </article>
             <!-- PREGUNTA -->
             <article>
@@ -37,27 +40,27 @@
                     <ol>
                         <li>
                             <h3> GET </h3>
-                            <p>Típicamente se utiliza para <strong>recuperar información</strong>.<a href="#footnote-1">[1]</a></p>
+                            <p>Típicamente se utiliza para <strong>recuperar información</strong>. <a href="#footnote-1">[1]</a></p>
                         </li>
                         <li>
                             <h3> HEAD </h3>
-                            <p>Sirve para solo <strong>obtener la cabecera</strong> de la información recuperada.<a href="#footnote-1">[1]</a></p>
+                            <p>Sirve para solo <strong>obtener la cabecera</strong> de la información recuperada. <a href="#footnote-1">[1]</a></p>
                         </li>
                         <li>
                             <h3> POST </h3>
-                            <p>Nos permite <strong>enviar información</strong> para generar algún tipo de cambio o acción del lado del servidor.<a href="#footnote-1">[1]</a></p>
+                            <p>Nos permite <strong>enviar información</strong> para generar algún tipo de cambio o acción del lado del servidor. <a href="#footnote-1">[1]</a></p>
                         </li>
                         <li>
                             <h3> PUT </h3>
-                            <p>Nos permite <strong>colocar un recurso</strong> en el servidor sin riesgo a la duplicación.<a href="#footnote-1">[1]</a></p>
+                            <p>Nos permite <strong>colocar un recurso</strong> en el servidor sin riesgo a la duplicación. <a href="#footnote-1">[1]</a></p>
                         </li>
                         <li>
                             <h3> PATCH </h3>
-                            <p>Sirve para realizar la <strong>modificación parcial</strong> de algún recurso.<a href="#footnote-1">[1]</a></p>
+                            <p>Sirve para realizar la <strong>modificación parcial</strong> de algún recurso. <a href="#footnote-1">[1]</a></p>
                         </li>
                         <li>
                             <h3> DELETE </h3>
-                            <p>Se utiliza para <strong>eliminar un recurso</strong> del servidor.<a href="#footnote-1">[1]</a></p>
+                            <p>Se utiliza para <strong>eliminar un recurso</strong> del servidor. <a href="#footnote-1">[1]</a></p>
                         </li>
                     </ol>
             </article>
@@ -81,37 +84,64 @@
             <!-- PREGUNTA -->
             <article>
                 <h1>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 404? ¿Por qué?</h1>
-                <p></p>
+                <p>Sí, esto significa que hay un recurso que no se encuentra en el servidor y se traduce a una mala ruta o que no se subió correctamente el mismo.</p>
             </article>
             <!-- PREGUNTA -->
             <article>
                 <h1>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué?</h1>
-                <p></p>
+                <p>No necesariamente. Esto representa un error interno con el servidor y no tiene que haber sido culpa del desarrollador.</p>
             </article>
             <!-- PREGUNTA -->
             <article>
-                <h1>¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.</h1>
-                <p></p>
+                <h1>¿Qué significa que un atributo HTML4 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.</h1>
+                <p>Representa un elemento al que no se le da seguimiento <em>(support)</em>. Por ejemplo, algunos elementos despreciados son: <em>&lt;applet&gt;, &lt;center&gt;, &lt;font&gt;, &lt;dir&gt;, &lt;striket&gt;.</em>
+                    <a href="#footnote-3">[3]</a>
+                </p>
             </article>
             <!-- PREGUNTA -->
             <article>
                 <h1>¿Cuáles son las diferencias principales entre HTML 4 y HTML5?</h1>
-                <p></p>
+                <p>
+                    <ul>
+                        <li>El desarrollo de un algorimto para manejar los documentos malformados (que no siguen el estándar). <a href="#footnote-4">[4]</a></li>
+                        <li>La introducción de elementos semánticos como: &lt;section&gt; y &lt;article&gt;. <a href="#footnote-4">[4]</a></li>
+                        <li>Mejor soporte para web apps y almacenamiento local. <a href="#footnote-4">[4]</a></li>
+                    </ul>
+                </p>
             </article>
             <!-- PREGUNTA -->
             <article>
                 <h1>¿Qué componentes de estructura y estilo tiene una tabla?</h1>
-                <p></p>
+                <p>
+                    <ul>
+                        <li><strong><dfn>table</dfn></strong> - para encerrar lodo lo que formará parte de la tabla.</li>
+                        <li><strong><dfn>thead</dfn></strong> - para encerrar lodo lo que formará parte de la <em>cabecera</em>de la tabla.</li>
+                        <li><strong><dfn>tbody</dfn></strong> - para encerrar lodo lo que formará parte del <em>cuerpo</em>de la tabla.</li>
+                        <li><strong><dfn>tfoot</dfn></strong> - para encerrar lodo lo que formará parte del <em>pie</em>de la tabla.</li>
+                        <li><strong><dfn>th</dfn></strong> - para encerrar la <em>fila de títulos</em> en la tabla.</li>
+                        <li><strong><dfn>tr</dfn></strong> - para encerrar una <em>fila</em> en la tabla.</li>
+                        <li><strong><dfn>td</dfn></strong> - para encerrar una <em>celda de una fila</em> en la tabla.</li>
+                    </ul>
+                </p>
             </article>
             <!-- PREGUNTA -->
             <article>
                 <h1>¿Cuáles son los principales controles de una forma HTML5?</h1>
-                <p></p>
+                <p>Con HTML5 se introdujeron nuevos elementos y atributos de los cuales caben destacar:
+                    <ul>
+                        <li><dfn>type="email"</dfn>: Le dice al buscador que en el campo se espera un correo.</li>
+                        <li><dfn>type="date"</dfn>: Le dice al buscador que en el campo se espera una fecha.</li>
+                        <li><dfn>required</dfn>: Le dice al buscador que el campo es obligatorio.</li>
+                        <li><dfn>autocomplete</dfn>: Le dice al buscador que el campo puede ser autocompletado.</li>
+                    </ul>
+                </p>
             </article>
             <!-- PREGUNTA -->
             <article>
                 <h1>¿Qué tanto soporte HTML5 tiene el navegador que utilizas? Puedes utilizar la siguiente página para descubrirlo: http://html5test.com/ (Al responder la pregunta recuerda poner el navegador que utilizas)</h1>
-                <p></p>
+                <p>
+                    Utilizo Mozilla Firefox 62.0 para macOS High Sierra 10.13. Obtuvo una puntuación de <strong><em>484</em>/555</strong>.
+                </p>
             </article>
         </section>
         <section>
@@ -119,22 +149,40 @@
             <!-- PREGUNTA -->
             <article>
                 <h1>¿Cuál es el ciclo de vida de los sistemas de información?</h1>
-                <p></p>
+                <p>Se separa en 7 etapas:
+                    <ol>
+                        <li><strong>Planeación</strong> - Determinar el problema a resolver y estimar lo que se necesita para hacerlo. <a href="#footnote-5>">[5]</a></li>
+                        <li><strong>Análisis de Requisitos</strong> - Se determinan los requisitos funcionales, no funcionales, de información, entre otros para el sistema. <a href="#footnote-5>">[5]</a></li>
+                        <li><strong>Diseño del sistema</strong> - Se desarrollan diagramas y bosquejos para determinar antes de desarrollar como funcionará el sistema. <a href="#footnote-5>">[5]</a></li>
+                        <li><strong>Desarollo</strong> - Se comienza a programar y desarrollar lo que se diseño en la etapa anterior. <a href="#footnote-5>">[5]</a></li>
+                        <li><strong>Testing</strong> - Se prueba lo desarrollado y nos aseguramos que cumpla con lo que se espera. <a href="#footnote-5>">[5]</a></li>
+                        <li><strong>Implementación</strong> - Se pone en producción lo desarrollado para que resuelva el problema planteado al inicio. <a href="#footnote-5>">[5]</a></li>
+                        <li><strong>Mantenimiento</strong> - Con datos del mundo real se ajusta el sistema para hacerlo más eficiente. <a href="#footnote-5>">[5]</a></li>
+                    </ol>
+                </p>
             </article>
             <!-- PREGUNTA -->
             <article>
                 <h1>¿Cuál es el ciclo de desarrollo de sistemas de información?</h1>
-                <p></p>
+                <p>Dependiendo de la ténica de desarollo (en espiral, agile, etc). El ciclo de desarollo varia, pero por lo general se guía del concepto de:
+                    <blockquote>
+                        Análisis --> Diseño --> Desarollo --> Testing --> Análisis.
+                    </blockquote>
+                </p>
             </article>
         </section>
         <section>
             <h1>Referencias</h1>
-            <p id="footnote-1">[1] <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods">https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods</a></p>
+            <p id="footnote-1">[1] <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods">HTTP request methods</a></p>
+            <p id="footnote-2">[2] Phil Bradley, World Wide Web : How to Design and Construct Web Pages, 7-8, 2000</p>
+            <p id="footnote-3">[3] <a href="https://www.w3.org/TR/html4/index/elements.html"> Index of HTML4 Elements </a></p>
+            <p id="footnote-4">[4] <a href="https://stackoverflow.com/questions/134727/whats-the-key-difference-between-html-4-and-html-5"> What's the key difference between HTML 4 and HTML 5? </a></p>
+            <p id="footnote-4">[5] <a href="https://www.innovativearchitects.com/KnowledgeCenter/basic-IT-systems/system-development-life-cycle.aspx"> The Seven Phases of the System-Development Life Cycle </a></p>
         </section>
         <footer>
             <strong> Nombre: </strong>Juan Alejandro Alcántara Minaya
             <strong> Matrícula: </strong>A01703947
-            <strong> Correo: </strong><a href="mailto:A01703947@itesm.mx">A01703947@itesm.mx</a><br/>
+            <strong> Correo: </strong><a href="maigto:A01703947@itesm.mx">A01703947@itesm.mx</a><br/>
             <strong> Creado con <a href="https://atom.io/"> Atom </a> </strong>
         </footer>
     </body>
