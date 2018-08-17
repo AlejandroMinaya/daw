@@ -3,13 +3,13 @@
     <head>
         <meta charset="utf-8"/>
         <title>
-            Laboratorio 2 - DAW
+            Laboratorio 3 - DAW
         </title>
         <link rel="stylesheet" href="main.css"/>
     </head>
     <body>
         <header>
-            <h1> Laboratorio 2 - CSS </h1>
+            <h1 class="page-title"> Laboratorio 3 - CSS </h1>
             <nav>
                 <ul>
                     <li><a href="index.html"> Inicio </a>
@@ -22,25 +22,37 @@
         <section>
             <h1> Cuestionario General </h1>
             <!-- PREGUNTA -->
-            <article>
-                <h1>Como ingeniero de software ¿cuál es tu recomendación sobre el uso de !important en un CSS? </h1>
-                <p>El uso de !important debería ser el último recurso. Tiene mucho poder y hay que tener responsabilidad al usarlo. Si lo usas indiscriminadamente, es evidencia de una mala práctica.</p>
+            <article class="pregunta">
+                <h1 class="pregunta-titulo">Como ingeniero de software ¿cuál es tu recomendación sobre el uso de !important en un CSS? </h1>
+                <p>El uso de <strong><em>!important</em></strong> debería ser el último recurso. Tiene mucho poder y hay que tener responsabilidad al usarlo. Si lo usas indiscriminadamente, es evidencia de una mala práctica.</p>
+            </article>
+            <!-- PREGUNTA -->
+            <article class="pregunta">
+                <h1 class="pregunta-titulo">Si se pone una imagen de fondo en una página HTML, ¿por qué debe escogerse con cuidado?</h1>
+                <p>Las imágenes de fondo representa un reto en ciertas ocasiones. Primero se debe escoger con cuidado porque debe tener la resolución y tamaño suficiente para que
+                ocupe correctamente la ventana. Eso puede traer como resultado una imágen pesada que tarda en cargar, lo cuál es en sí otro problema. Por eso a la hora de escoger
+                una imágen para un fondo hay que pensarlo dos veces.</p>
+            </article>
+            <!-- PREGUNTA -->
+            <article class="pregunta">
+                <h1 class="pregunta-titulo">Como ingeniero de software, ¿cuál es tu recomendación al elegir las unidades de un propiedad de estilo entre %, px y pt?</h1>
+                <p>Para un diseño responsivo utilizaría % para los tamaños de los elementos y para sus respectivos márgenes y relleno. Para los bordes utilizaría px, mientras que para las letras
+                    de no poder usar rem o vw, utilizaría pt. Al final todo depende de que tan responsivo se quiere realizar el diseño de cuya página (en el mayor de los casos 100% responsiva).
+                </p>
+            </article>
+            <!-- PREGUNTA -->
+            <article class="pregunta">
+                <h1 class="pregunta-titulo">¿Por qué el uso de una versión minimizada del CSS mejora el rendimiento del sitio?</h1>
+                <p>Los espacios y saltos de líneas no son imprescindibles para ejecutar el archivo, sin embargo, ocupan espacio y memoria. Al minimizar el archivo se elimina ese
+                espacio extra y el recurso puede cargar más rápido.</p>
             </article>
 
-        </section>
-        <section>
-            <h1>Referencias</h1>
-            <p id="footnote-1">[1] <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods">HTTP request methods</a></p>
-            <p id="footnote-2">[2] Phil Bradley, World Wide Web : How to Design and Construct Web Pages, 7-8, 2000</p>
-            <p id="footnote-3">[3] <a href="https://www.w3.org/TR/html4/index/elements.html"> Index of HTML4 Elements </a></p>
-            <p id="footnote-4">[4] <a href="https://stackoverflow.com/questions/134727/whats-the-key-difference-between-html-4-and-html-5"> What's the key difference between HTML 4 and HTML 5? </a></p>
-            <p id="footnote-4">[5] <a href="https://www.innovativearchitects.com/KnowledgeCenter/basic-IT-systems/system-development-life-cycle.aspx"> The Seven Phases of the System-Development Life Cycle </a></p>
         </section>
         <footer>
             <strong> Nombre: </strong>Juan Alejandro Alcántara Minaya
             <strong> Matrícula: </strong>A01703947
             <strong> Correo: </strong><a href="maigto:A01703947@itesm.mx">A01703947@itesm.mx</a><br/>
-            <strong> Creado con <a href="https://atom.io/"> Atom </a> </strong>
+            <strong class="full-row"> Creado con <a href="https://atom.io/"> Atom </a> </strong>
         </footer>
     </body>
 </html>
